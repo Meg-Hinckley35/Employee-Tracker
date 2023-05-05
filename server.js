@@ -22,23 +22,6 @@ const db = mysql.createConnection(
   console.log(`Connected to the employee_db database.`)
 );
 
-
-app.get('/api/movies', (req, res) =>
-    res.json(`${req.method} request received`));
-
-app.post('/api/update_review', (req, res) => 
-    res.json(`${req.method} request received`));
-
-app.put('/api/add-movie', (req, res) => 
-    res.json(`${req.method} request received`));
-
-app.delete('/api/movie/:id', (req, res) => 
-    res.json(`${req.method} request received`));
-
-// Default response for any other request (Not Found)
-app.use((req, res) => {
-    res.status(404).end();
-  });
   
   app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
