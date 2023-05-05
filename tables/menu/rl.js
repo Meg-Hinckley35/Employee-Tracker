@@ -1,5 +1,5 @@
-const Role = require("../Role");
-const Dpt = require("../Dpt");
+const Role = require("../role");
+const Dpt = require("../department");
 const inquirer = require("inquirer");
 const menu = require("./menu");
 
